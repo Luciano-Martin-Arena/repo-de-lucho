@@ -3673,7 +3673,7 @@
 				)
 			)
 		)
-		(symbol "Transistor_BJT:BC547"
+		(symbol "Transistor_BJT:MMBT2222A"
 			(pin_names
 				(offset 0) hide)
 			(exclude_from_sim no)
@@ -3688,7 +3688,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC547"
+			(property "Value" "MMBT2222A"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -3697,7 +3697,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -3708,7 +3708,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3718,7 +3718,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
+			(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3736,7 +3736,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3745,19 +3745,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC547_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "MMBT2222A_0_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -3818,11 +3806,11 @@
 					)
 				)
 			)
-			(symbol "BC547_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
+			(symbol "MMBT2222A_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 5.715)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3837,10 +3825,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.08)
-					(name "B"
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3856,9 +3844,9 @@
 					)
 				)
 				(pin passive line
-					(at 2.54 -5.08 90)
+					(at 2.54 5.08 270)
 					(length 2.54)
-					(name "E"
+					(name "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4219,12 +4207,6 @@
 		(uuid "05959a22-3e9e-4c7e-b899-ef5939453f95")
 	)
 	(junction
-		(at 74.93 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23daee7a-ba71-453a-842c-1e1549b7cf1b")
-	)
-	(junction
 		(at 161.29 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4277,6 +4259,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "88484317-6f4f-444e-bf03-b4194ece470f")
+	)
+	(junction
+		(at 74.93 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e0ae53a-4345-4af1-a267-bf7cec336dc5")
 	)
 	(junction
 		(at 228.6 82.55)
@@ -4522,6 +4510,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 43.18) (xy 69.85 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f3956d-ce69-421d-9b94-ad0034c2ecf3")
+	)
+	(wire
+		(pts
 			(xy 222.25 35.56) (xy 227.33 35.56)
 		)
 		(stroke
@@ -4672,16 +4670,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 35.56) (xy 74.93 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b553894-3450-4f30-9ca7-6dd131c4d8e4")
-	)
-	(wire
-		(pts
 			(xy 67.31 31.75) (xy 67.31 35.56)
 		)
 		(stroke
@@ -4782,6 +4770,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 43.18) (xy 229.87 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d63c79a4-1c65-4006-b989-95b04f58d31e")
+	)
+	(wire
+		(pts
 			(xy 140.97 88.9) (xy 140.97 87.63)
 		)
 		(stroke
@@ -4809,16 +4807,6 @@
 			(type default)
 		)
 		(uuid "dc09f9cf-ffb3-4bf8-a3db-8e9f009c5160")
-	)
-	(wire
-		(pts
-			(xy 154.94 35.56) (xy 154.94 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddd5f3e2-3062-4679-b205-c5b5b0965dc3")
 	)
 	(wire
 		(pts
@@ -4852,6 +4840,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 43.18) (xy 149.86 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8b630bd-d77e-4f04-8b0b-bffd64899fd8")
+	)
+	(wire
+		(pts
 			(xy 62.23 35.56) (xy 67.31 35.56)
 		)
 		(stroke
@@ -4879,6 +4877,16 @@
 			(type default)
 		)
 		(uuid "f5b818b6-6aa0-4172-b321-28bc0feb37b9")
+	)
+	(wire
+		(pts
+			(xy 228.6 90.17) (xy 231.14 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa2ee7f1-4452-4344-ab02-5e9c195a2034")
 	)
 	(wire
 		(pts
@@ -6525,6 +6533,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:MMBT2222A")
+		(at 74.93 40.64 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "285a1b68-395c-44c2-9ac1-0ab499c88513")
+		(property "Reference" "Q3"
+			(at 74.93 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 74.93 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 73.025 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
+			(at 74.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
+			(at 74.93 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "63079e9a-f812-4649-a9b3-4c2e7455810e")
+		)
+		(pin "1"
+			(uuid "5d22255e-62d6-4df3-91cf-894210e1a7f0")
+		)
+		(pin "2"
+			(uuid "a9ebef87-26ca-4e73-81bf-49825919dd4a")
+		)
+		(instances
+			(project ""
+				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 116.84 43.18 0)
 		(unit 1)
@@ -7240,35 +7322,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC547")
-		(at 72.39 43.18 0)
+		(lib_id "Transistor_BJT:MMBT2222A")
+		(at 234.95 40.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4f8fe657-cd93-4243-9db9-715423847454")
-		(property "Reference" "Q2"
-			(at 77.47 41.9099 0)
+		(fields_autoplaced yes)
+		(uuid "4cc1e726-d7aa-446e-96bf-184d2b137b94")
+		(property "Reference" "Q7"
+			(at 234.95 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
-		(property "Value" "BC547"
-			(at 76.2 40.64 0)
+		(property "Value" "MMBT2222A"
+			(at 234.95 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "bc547:SOT95P230X110-3N"
-			(at 77.47 45.085 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 233.045 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7278,8 +7358,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 72.39 43.18 0)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
+			(at 234.95 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7288,8 +7368,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 72.39 43.18 0)
+		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
+			(at 234.95 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7298,18 +7378,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "b9b86039-6b00-4d29-b4b4-8eefd23226eb")
-		)
-		(pin "2"
-			(uuid "5297f145-4e7a-47f4-9f21-e964cb4768f7")
+			(uuid "aa4fa036-785a-4a18-baa7-27b18d94be08")
 		)
 		(pin "1"
-			(uuid "b732d1e0-54af-40e8-800d-783a7b630b40")
+			(uuid "9c737197-6d4e-4034-8911-a3a090c0a0b5")
+		)
+		(pin "2"
+			(uuid "257c070e-95d6-4d5d-8ccc-81453fe03f89")
 		)
 		(instances
-			(project ""
+			(project "Kicad Arena Luciano"
 				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
-					(reference "Q2")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -7871,6 +7951,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:MMBT2222A")
+		(at 236.22 87.63 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66144733-34b5-4710-a63b-e7a6b30ffbab")
+		(property "Reference" "Q8"
+			(at 236.22 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 236.22 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 234.315 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
+			(at 236.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
+			(at 236.22 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b34c4e4c-4e1d-4535-8700-1a2cd5d335ae")
+		)
+		(pin "1"
+			(uuid "8020f276-4f85-4cf9-9c0b-46a1a386a39a")
+		)
+		(pin "2"
+			(uuid "9f6e4150-74cf-4a52-ba2e-f1c4665369f2")
+		)
+		(instances
+			(project "Kicad Arena Luciano"
+				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 196.85 43.18 0)
 		(unit 1)
@@ -8366,82 +8520,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC547")
-		(at 233.68 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c10fcd5-be64-48ac-8552-68f9ea8be567")
-		(property "Reference" "Q5"
-			(at 238.76 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "BC547"
-			(at 237.49 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "bc547:SOT95P230X110-3N"
-			(at 238.76 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 233.68 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 233.68 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "4534cd3b-82a7-4ed2-96ff-a640a4823d6f")
-		)
-		(pin "2"
-			(uuid "9721fc99-9b9e-47c4-bf36-6aea554f8c73")
-		)
-		(pin "1"
-			(uuid "2f253694-4436-4d72-b9f7-a9d607ffe7e4")
-		)
-		(instances
-			(project "Rele-wifi Esquematico"
-				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 228.6 74.93 270)
 		(unit 1)
@@ -8600,7 +8678,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 48.26 0)
+		(at 80.01 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8608,7 +8686,7 @@
 		(dnp no)
 		(uuid "8432c449-1a1c-48ea-9521-523598baa5e7")
 		(property "Reference" "#PWR03"
-			(at 74.93 54.61 0)
+			(at 80.01 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8617,7 +8695,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 52.07 0)
+			(at 80.01 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8625,7 +8703,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 48.26 0)
+			(at 80.01 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8634,7 +8712,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 48.26 0)
+			(at 80.01 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8643,7 +8721,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 48.26 0)
+			(at 80.01 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9833,7 +9911,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 154.94 48.26 0)
+		(at 160.02 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9841,7 +9919,7 @@
 		(dnp no)
 		(uuid "ad1df2d1-8740-4c28-ad4c-0e23865408e8")
 		(property "Reference" "#PWR08"
-			(at 154.94 54.61 0)
+			(at 160.02 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9850,7 +9928,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 154.94 52.07 0)
+			(at 160.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9858,7 +9936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 48.26 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9867,7 +9945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 48.26 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9876,7 +9954,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 48.26 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10469,82 +10547,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:BC547")
-		(at 232.41 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cfcd4da7-f8a0-456c-9488-eb0b1437fe8c")
-		(property "Reference" "Q4"
-			(at 237.49 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "BC547"
-			(at 236.22 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "bc547:SOT95P230X110-3N"
-			(at 237.49 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 232.41 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 232.41 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "71cb0902-3b4c-44ff-a4e8-db7021fee7e9")
-		)
-		(pin "2"
-			(uuid "aacc03fc-8cda-4710-9202-b6726d0fe835")
-		)
-		(pin "1"
-			(uuid "0989b19c-b6ae-497a-9aeb-ddc69ea4a9d8")
-		)
-		(instances
-			(project "Rele-wifi Esquematico"
-				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 140.97 88.9 0)
 		(unit 1)
@@ -10698,7 +10700,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 95.25 0)
+		(at 241.3 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10706,7 +10708,7 @@
 		(dnp no)
 		(uuid "d9bd16a1-ad5e-4e7e-a8b8-1dc305404994")
 		(property "Reference" "#PWR020"
-			(at 236.22 101.6 0)
+			(at 241.3 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10715,7 +10717,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 236.22 99.06 0)
+			(at 241.3 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10723,7 +10725,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 95.25 0)
+			(at 241.3 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10732,7 +10734,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 95.25 0)
+			(at 241.3 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10741,7 +10743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 95.25 0)
+			(at 241.3 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10756,82 +10758,6 @@
 			(project "Rele-wifi Esquematico"
 				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
 					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC547")
-		(at 152.4 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9d75016-156e-4118-877b-8d98f2ee4f48")
-		(property "Reference" "Q1"
-			(at 157.48 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "BC547"
-			(at 156.21 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "bc547:SOT95P230X110-3N"
-			(at 157.48 45.085 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC550-D.pdf"
-			(at 152.4 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 45V Vce, Small Signal NPN Transistor, TO-92"
-			(at 152.4 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "7627d58c-0564-41f8-ae13-a5a209d6165c")
-		)
-		(pin "2"
-			(uuid "5df24d68-b926-47f8-99ad-72c2e1ac282f")
-		)
-		(pin "1"
-			(uuid "ffaae75b-0cf3-40d3-ae85-9292bb175ede")
-		)
-		(instances
-			(project "Rele-wifi Esquematico"
-				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -10912,7 +10838,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 234.95 48.26 0)
+		(at 240.03 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10920,7 +10846,7 @@
 		(dnp no)
 		(uuid "dd149cfe-889b-4281-b5f4-d84aec326b9e")
 		(property "Reference" "#PWR016"
-			(at 234.95 54.61 0)
+			(at 240.03 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10929,7 +10855,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 234.95 52.07 0)
+			(at 240.03 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10937,7 +10863,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 48.26 0)
+			(at 240.03 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10946,7 +10872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 48.26 0)
+			(at 240.03 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10955,7 +10881,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 48.26 0)
+			(at 240.03 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11123,6 +11049,79 @@
 			(project ""
 				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBT2222A")
+		(at 154.94 40.64 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea856fcb-6f41-42b3-8369-9bb6e0807a76")
+		(property "Reference" "Q6"
+			(at 154.94 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MMBT2222A"
+			(at 154.94 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 153.035 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
+			(at 154.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
+			(at 154.94 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f9c45af9-6d28-4897-8ae6-d82493858b43")
+		)
+		(pin "1"
+			(uuid "a27fbc43-3927-462d-adae-0a7bff6352d2")
+		)
+		(pin "2"
+			(uuid "e13a06c2-75eb-45ea-a4c2-fde0c4573698")
+		)
+		(instances
+			(project "Kicad Arena Luciano"
+				(path "/edace09f-ae97-4ce6-a61e-7845a0a023c8"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
