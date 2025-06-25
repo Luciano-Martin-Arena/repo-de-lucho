@@ -4207,6 +4207,12 @@
 		(uuid "05959a22-3e9e-4c7e-b899-ef5939453f95")
 	)
 	(junction
+		(at 154.94 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16d966fb-0b4e-457c-8f54-c1b2d90ad5c1")
+	)
+	(junction
 		(at 161.29 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4243,12 +4249,6 @@
 		(uuid "7b181c90-6abd-4d45-8233-48e3c7baada2")
 	)
 	(junction
-		(at 154.94 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83cafc2e-3a65-4e70-8130-b4e45bf30473")
-	)
-	(junction
 		(at 147.32 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4259,12 +4259,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "88484317-6f4f-444e-bf03-b4194ece470f")
-	)
-	(junction
-		(at 74.93 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e0ae53a-4345-4af1-a267-bf7cec336dc5")
 	)
 	(junction
 		(at 228.6 82.55)
@@ -4283,6 +4277,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "afa271da-3924-40d5-8904-24a2aef750a8")
+	)
+	(junction
+		(at 74.93 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7e809a8-5a8d-46b1-80ff-363ae0aafe52")
 	)
 	(junction
 		(at 147.32 35.56)
@@ -4470,6 +4470,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 35.56) (xy 154.94 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2db362d1-a4de-437e-bd47-6b0a2d20856b")
+	)
+	(wire
+		(pts
 			(xy 72.39 82.55) (xy 78.74 82.55)
 		)
 		(stroke
@@ -4500,6 +4510,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 38.1) (xy 74.93 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44bdb942-1afa-402f-9995-9ee4446a799d")
+	)
+	(wire
+		(pts
 			(xy 102.87 77.47) (xy 102.87 81.28)
 		)
 		(stroke
@@ -4507,16 +4527,6 @@
 			(type default)
 		)
 		(uuid "5026ff82-4f81-4875-8b99-a4c104530c7c")
-	)
-	(wire
-		(pts
-			(xy 67.31 43.18) (xy 69.85 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50f3956d-ce69-421d-9b94-ad0034c2ecf3")
 	)
 	(wire
 		(pts
@@ -4770,16 +4780,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 43.18) (xy 229.87 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d63c79a4-1c65-4006-b989-95b04f58d31e")
-	)
-	(wire
-		(pts
 			(xy 140.97 88.9) (xy 140.97 87.63)
 		)
 		(stroke
@@ -4840,16 +4840,6 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 43.18) (xy 149.86 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8b630bd-d77e-4f04-8b0b-bffd64899fd8")
-	)
-	(wire
-		(pts
 			(xy 62.23 35.56) (xy 67.31 35.56)
 		)
 		(stroke
@@ -4877,16 +4867,6 @@
 			(type default)
 		)
 		(uuid "f5b818b6-6aa0-4172-b321-28bc0feb37b9")
-	)
-	(wire
-		(pts
-			(xy 228.6 90.17) (xy 231.14 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa2ee7f1-4452-4344-ab02-5e9c195a2034")
 	)
 	(wire
 		(pts
@@ -6534,32 +6514,33 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 74.93 40.64 270)
+		(at 72.39 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "285a1b68-395c-44c2-9ac1-0ab499c88513")
 		(property "Reference" "Q3"
-			(at 74.93 46.99 90)
+			(at 77.47 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "MMBT2222A"
-			(at 74.93 49.53 90)
+			(at 77.47 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 73.025 45.72 0)
+			(at 77.47 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6570,7 +6551,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 74.93 40.64 0)
+			(at 72.39 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6580,7 +6561,7 @@
 			)
 		)
 		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 74.93 40.64 0)
+			(at 72.39 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7323,7 +7304,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 234.95 40.64 270)
+		(at 232.41 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7332,23 +7313,25 @@
 		(fields_autoplaced yes)
 		(uuid "4cc1e726-d7aa-446e-96bf-184d2b137b94")
 		(property "Reference" "Q7"
-			(at 234.95 46.99 90)
+			(at 237.49 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "MMBT2222A"
-			(at 234.95 49.53 90)
+			(at 237.49 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 233.045 45.72 0)
+			(at 237.49 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7359,7 +7342,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 234.95 40.64 0)
+			(at 232.41 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7369,7 +7352,7 @@
 			)
 		)
 		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 234.95 40.64 0)
+			(at 232.41 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7952,7 +7935,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 236.22 87.63 270)
+		(at 233.68 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7961,23 +7944,25 @@
 		(fields_autoplaced yes)
 		(uuid "66144733-34b5-4710-a63b-e7a6b30ffbab")
 		(property "Reference" "Q8"
-			(at 236.22 93.98 90)
+			(at 238.76 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "MMBT2222A"
-			(at 236.22 96.52 90)
+			(at 238.76 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 234.315 92.71 0)
+			(at 238.76 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7988,7 +7973,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 236.22 87.63 0)
+			(at 233.68 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7998,7 +7983,7 @@
 			)
 		)
 		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 236.22 87.63 0)
+			(at 233.68 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8678,7 +8663,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 43.18 0)
+		(at 74.93 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8686,7 +8671,7 @@
 		(dnp no)
 		(uuid "8432c449-1a1c-48ea-9521-523598baa5e7")
 		(property "Reference" "#PWR03"
-			(at 80.01 49.53 0)
+			(at 74.93 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8695,7 +8680,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 46.99 0)
+			(at 74.93 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8703,7 +8688,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 43.18 0)
+			(at 74.93 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8712,7 +8697,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 43.18 0)
+			(at 74.93 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8721,7 +8706,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 43.18 0)
+			(at 74.93 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9911,7 +9896,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 43.18 0)
+		(at 154.94 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9919,7 +9904,7 @@
 		(dnp no)
 		(uuid "ad1df2d1-8740-4c28-ad4c-0e23865408e8")
 		(property "Reference" "#PWR08"
-			(at 160.02 49.53 0)
+			(at 154.94 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9928,7 +9913,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 46.99 0)
+			(at 154.94 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9936,7 +9921,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 43.18 0)
+			(at 154.94 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9945,7 +9930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 43.18 0)
+			(at 154.94 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9954,7 +9939,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 43.18 0)
+			(at 154.94 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10700,7 +10685,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 241.3 90.17 0)
+		(at 236.22 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10708,7 +10693,7 @@
 		(dnp no)
 		(uuid "d9bd16a1-ad5e-4e7e-a8b8-1dc305404994")
 		(property "Reference" "#PWR020"
-			(at 241.3 96.52 0)
+			(at 236.22 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10717,7 +10702,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 241.3 93.98 0)
+			(at 236.22 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10725,7 +10710,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 90.17 0)
+			(at 236.22 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10734,7 +10719,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 90.17 0)
+			(at 236.22 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10743,7 +10728,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 90.17 0)
+			(at 236.22 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10838,7 +10823,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 43.18 0)
+		(at 234.95 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10846,7 +10831,7 @@
 		(dnp no)
 		(uuid "dd149cfe-889b-4281-b5f4-d84aec326b9e")
 		(property "Reference" "#PWR016"
-			(at 240.03 49.53 0)
+			(at 234.95 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10855,7 +10840,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 46.99 0)
+			(at 234.95 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10863,7 +10848,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 43.18 0)
+			(at 234.95 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10872,7 +10857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 43.18 0)
+			(at 234.95 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10881,7 +10866,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 43.18 0)
+			(at 234.95 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11056,7 +11041,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 154.94 40.64 270)
+		(at 152.4 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11064,7 +11049,7 @@
 		(dnp no)
 		(uuid "ea856fcb-6f41-42b3-8369-9bb6e0807a76")
 		(property "Reference" "Q6"
-			(at 154.94 46.99 90)
+			(at 158.75 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11072,7 +11057,7 @@
 			)
 		)
 		(property "Value" "MMBT2222A"
-			(at 154.94 50.8 90)
+			(at 162.56 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11080,7 +11065,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 153.035 45.72 0)
+			(at 157.48 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11091,7 +11076,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 154.94 40.64 0)
+			(at 152.4 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11101,7 +11086,7 @@
 			)
 		)
 		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 154.94 40.64 0)
+			(at 152.4 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11153,7 +11138,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ESP32:MODULE_ESP32-DEVKITC"
+		(property "Footprint" "EESTN5:ESP32S"
 			(at 52.07 90.17 0)
 			(effects
 				(font
